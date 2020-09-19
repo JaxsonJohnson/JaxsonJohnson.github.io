@@ -3,19 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Jaxson bb</title>
+    <meta name="description" content="Assignment Portal for Jaxson Johnson in WDD 230: Web Frontend Development">
+  <link rel="stylesheet" href="CSS/styles.css">
+    <title>WDD 230 Assignment Portal</title>
 </head>
-<body>
-    <header>
-        <h1>This is my page</h1>
-        <nav>
-            <li>Link 1</li>
-            <li>Link 2</li>
-            <li>Link 3</li>
-        </nav>
-    </header>
-    
-<img src = "C:\Users\Jaxson Johnson\Desktop\School\Web Frontend Development\images\trashy.jpg" alt = "trash content"/>
 
+<body>
+    <div id = "body">
+    <header>
+        <h1>Jaxson Johnson</h1>
+        <img id ="img" src = "Images/Jaxson.png" alt = "A picture of me at Yellowstone">
+    </header>
+    <main>
+    <h2>WDD 230: Assignment Portal</h2>
+        <nav>
+            <li>Lesson 2:<a href> Assignment Link</a></li>
+            <li>Lesson 3:<a href> Assignment Link</a></li>
+            <li>Lesson 4:<a href> Link </a> | <a href>Link</a></li>
+        </nav>
+    </main>
+    <footer>
+        <div id = "footer">
+        <p> © <span id = "year"></span> | Jaxson B. Johnson | Utah | <a id = 'a2' href= "https://www.byui.edu">BYUI Online Learning</a></p>
+        <p>Last Updated: <span id ="update"></span></p>
+        </div>
+   
+    </footer>
+</div>
+<script>
+    document.getElementById("update").innerHTML = document.lastModified;
+    document.getElementById("year").innerHTML = (new Date().getFullYear());
+  </script>
 </body>
 </html>
