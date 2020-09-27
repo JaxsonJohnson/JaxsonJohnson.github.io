@@ -1,0 +1,14 @@
+@media (min-width: 50em) {
+    main {
+        justify-content: center;
+        padding: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 64em) {
+    main {
+        grid-template-columns: 34% 34% 34%;
+        justify-content: center;
+    }
+}
