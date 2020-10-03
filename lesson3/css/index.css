@@ -4,3 +4,77 @@ body{
     background-color: whitesmoke;
 }
 
+
+nav {
+    background-color: #d3bdb0; 
+    text-align: center;
+    border-radius: 5px;
+}
+
+nav ul {
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+  }
+
+
+nav a:hover {
+    background-color: #efe5dc;
+    color: white; 
+}
+
+header,
+nav,
+main,
+footer {
+	max-width: 1750px;
+    margin: 0 auto;
+}
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    background-color: #d3bdb0;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: bold
+}
+
+main {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    grid-gap: 5px; 
+    padding: 5px; 
+}
+
+.persona {
+    padding: 0.5em;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+.persona2 {
+    margin-top: 5px;
+    padding: 0.5em;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+    
+
+
+ @media only screen and (min-width: 60em) {
+        nav a {
+            font-size: 1.1rem;
+        }
+        main {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+ }
+    
