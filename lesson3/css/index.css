@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Sansita+Swashed:wght@500&display=swap');
 
 body{
     background-color: whitesmoke;
@@ -32,7 +32,7 @@ footer {
 }
 
 footer {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Sansita Swashed', cursive;
     background-color: #d3bdb0;
     text-align: center;
     font-weight: bold;
@@ -41,7 +41,7 @@ footer {
 
 
 header {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Sansita Swashed', cursive;
     font-size: 40px;
     font-weight: bold
 }
