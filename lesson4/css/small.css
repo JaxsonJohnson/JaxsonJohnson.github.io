@@ -1,0 +1,88 @@
+body{
+    background-color: whitesmoke;
+}
+
+nav {
+    margin-top: -50px;
+    background-color: #d3bdb0; 
+    text-align: center;
+    border-radius: 5px;
+}
+
+nav ul {
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+
+  }
+  nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none; 
+    font-size: 1.6rem;
+    color: #555; 
+}
+  nav ul li a{
+      color: black;
+  }
+
+nav ul.hide{
+    display: none;    
+}
+
+main {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    grid-gap: 5px; 
+    padding: 5px; 
+}
+
+.content  {
+    border: 4px solid black; 
+    padding: 25px;
+    margin: 20px; 
+}
+.content2  {
+    border: 4px solid black; 
+    padding: 25px;
+    margin: 20px; 
+}
+.content3  {
+    border: 4px solid black; 
+    padding: 25px;
+    margin: 20px; 
+}
+.content4  {
+    border: 4px solid black; 
+    padding: 20px;
+    margin: 20px; 
+}
+
+footer {
+    font-family: 'Robto';
+    background-color: #d3bdb0;
+    text-align: center;
+    margin: 20px;
+    border-radius: 5px;
+    color: black;
+}
+
+
+header {
+    margin-top: -70px;
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-weight: bold
+}
+
+
+
+ @media only screen and (min-width: 60em) {
+        nav a {
+            font-size: 1.1rem;
+        }
+        main {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+ }
+    
