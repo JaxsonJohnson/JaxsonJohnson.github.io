@@ -1,3 +1,4 @@
+/* 
 function input(){
     let temperature = parseFloat(document.getElementById("temp").innerText);
     let ws = parseFloat(document.getElementById("speed").innerText);
@@ -20,3 +21,5 @@ return end;
 } 
 
 input();
+
+*/
