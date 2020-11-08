@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content = "Preston Idaho Weather">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Storm Center - Lesson 8</title>
+</head>
+<body>
+    <img id = "logo" src = "/JaxsonJohnson.github.io/lesson8/storm/images/sunicon.png" alt = "logo of sun">
+    <header>
+        <h2> East Idaho Weather</h2>
+            <nav class = "menu">
+            <button onclick="toggleMenu()">&#9776;Menu</button>
+            <ul id="primaryNav" class="hide">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a class = "active" href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+        <p id = "banner">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+        <h1>Storm Center</h1>
+        <div class = "storm">
+                <fieldset>
+                    <label class="top">Full Name<input type="text" name="fullname" required></label>
+                    <label class="top">Email<input type="email" name="email"  placeholder="______@email.com"></label>
+                    <label class="top">Phone<input type="tele" name="phone"  placeholder="0000000000" required></label>
+                    <label class="top">Zip Code<input type="number" name="zipcode"  placeholder="00000"></label>
+                    <label class = "top">Storm Date<input type = "date" name="stormdate"></label>
+                    <label class = "top" for="typestorm" id="storm">Type of Storm<input list="list" id = "typestorm" name="storm"></label>
+                    <datalist id ="list">
+                        <option value= "Blizzard">
+                        <option value= "Hail">
+                        <option value= "Heavy Rain">
+                        <option value= "Ice Storms">
+                        <option value= "Lightning">
+                        <option value= "Unknown">
+                    </datalist>
+<div>
+    <label class="top" for="rating">Storm Intensity</label>
+    <div class = "num">
+        <input type="range" id = "rate" value = "5" min = "1" max = "10" step = "1" list = "mark" oninput="adj(this.value)" onchange="adj(this.value)">
+        <span id="ratingvalue">5</span></label>
+    </div>
+</div>
+<datalist id="mark">
+    <option value="0">
+    <option value="1">
+    <option value="2">
+    <option value="3">
+    <option value="4">
+    <option value="5">
+    <option value="6">
+    <option value="7">
+    <option value="8">
+    <option value="9">
+    <option value="10">
+</datalist>
+<lable class = "top" for = "location" id = "area">Storm Location
+<select name = "region" id = "location">
+                            <option value="preston">Preston</option>
+                            <option value="boise">Boise</option>
+                            <option value="rexburg">Rexburg</option>
+                            <option value="IF">Idaho Falls</option>
+                            <option value="unknown">Unknown</option>
+</select></lable>
+<div>Danger
+                        <label class="dan"><input type="radio" name="danger" value="yes">Yes</label>
+                        <label class="dan"><input type="radio" name="danger" value="maybe">Maybe</label>
+                        <label class="dan"><input type="radio" name="danger" value="no">No</label>
+</div>
+
+<label class="top">Additional Information</label>
+<textarea name="additionalinfo" rows="3" cols="40"></textarea>
+<input type="submit" value="Report Storm" class="submitbtn">
+                </fieldset>
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        
+        <p> Last Updated: <span id ="lastmodif"></span> |
+            Attributes | Jaxson Johnson | &copy; 2020 | <div id = 'current-date'></div>
+            </p>
+    </footer>
+
+    <script>
+         function adj(rating) {
+            document.getElementById("ratingvalue").innerHTML = rating;
+         }
+    </script>
+
+    <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/webfontload.js"></script>
+</body>
+</html>
