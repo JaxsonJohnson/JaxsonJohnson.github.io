@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content = "Preston Idaho Weather">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Preston - Lesson 10</title>
+</head>
+<body>
+    <img id = "logo" src = "/lesson10/images/sunicon.png" alt = "logo of sun">
+    <header>
+        <h2> East Idaho Weather</h2>
+            <nav class = "menu">
+            <button onclick="toggleMenu()">&#9776;Menu</button>
+            <ul id="primaryNav" class="hide">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+        <p id = "banner">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+        <h2>Preston Idaho</h2>
+
+        <div class = "content">
+
+            <picture>
+                <source media = "(max-width: 500px)" srcset = "/lesson10/images/wdd230_image_franklinOriginalsmall.jpg 500w">
+                <source media = "(max-width: 960px)" srcset = "/lesson10/images/wdd230_image_franklinOriginalmedium.jpg 1000w">
+                <img class = "hero" src ="/lesson10/images/wdd230_image_franklinOriginallearge.jpg" alt = "assigned picture for lesson 6">
+            </picture>
+    
+       
+        <section class = "weathersummary">
+            <h3>Weather Summary</h3>
+            <p>Currently: <span id = "current-current"></span></p>
+            <p>Current Temp: <span id = "current-temp"></span> &deg;F </p>
+            <p>Windchill: <span id = "wc"></span> &deg;F</p>
+            <p>Humdidty: <span id = "current-humid"></span>%</p>
+            <p>Windspeed: <span id = "current-speed"></span> MPH</p>
+        </section>
+    </div>
+
+        <div class = "content2">
+            <h2>5 Day Forecast</h2>
+            <div class="forecast">
+                <div class="forecast-day">
+                   <div class="dow"></div>
+                   <div class="temp"></div>
+                </div>
+                <div class="forecast-day">
+                   <div class="dow"></div>
+                   <div class="temp"></div>
+                </div>
+                <div class="forecast-day">
+                   <div class="dow"></div>
+                   <div class="temp"></div>
+                </div>
+                <div class="forecast-day">
+                   <div class="dow"></div>
+                   <div class="temp"></div>
+                </div>
+                <div class="forecast-day">
+                   <div class="dow"></div>
+                   <div class="temp"></div>
+                </div>
+             </div>
+        </div>
+
+        <div class = "content3">
+        <img class = "sunclouds" src = "/lesson10/images/sunclouds.jpg" alt = "sunny and clouds">
+        <h2>Todays News</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+         Maiores, enim! Error quas ut commodi nemo voluptatem vel temporibus maxime amet consequuntur deserunt, culpa non autem accusantium animi saepe velit eum?</p>
+        </div>
+         
+        <div class = "content4"> 
+        <h2>Contact the Preston Office</h2>
+        <img class = "idhmap" src = "/lesson10/images/preston.png" alt = "map of preston idaho">
+        <ul class = "contactinfo">
+            <li>Address: </li>
+            <li>Phone Number: 999-999-9999</li>
+            <li>Email: eastIDpreston@EID.org</li>
+        </ul>
+    </div>  
+
+    </main>
+
+    <footer>
+        
+        <p> Last Updated: <span id ="lastmodif"></span> |
+            Attributes | Jaxson Johnson | &copy; 2020 | <div id = 'current-date'></div>
+            </p>
+    </footer>
+    <script src ="js/preston.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/webfontload.js"></script>
+</body>
+</html>

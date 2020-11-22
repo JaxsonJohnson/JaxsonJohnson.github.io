@@ -30,17 +30,19 @@ fetch(requestURL)
     p3.textContent = "Annual Rain Fall: " + towns[i].averageRainfall;
 
     let image = document.createElement('img');
-    image.setAttribute('src', towns[i].photo);
+    image.setAttribute('src', "/lesson9/images/" +  towns[i].photo);
 
-    card.appendChild(h1);
-    card.appendChild(h3);
-    card.appendChild(p);
-    card.appendChild(p2);
-    card.appendChild(p3);
-    card.appendChild(image);
+    card.appendChild(h1)
+    card.appendChild(h3)
+    card.appendChild(p)
+    card.appendChild(p2)
+    card.appendChild(p3)
+    card.appendChild(image)
 
     resultElement.appendChild(card);
   }
 
 
 });
+
+/* https://knathanp.github.io/test-site/lesson09/index.html */

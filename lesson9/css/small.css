@@ -95,7 +95,6 @@ main {
     flex-direction: column;
 }
 
-
 footer {
     font-family: 'Roboto';
     background-color: #d3bdb0;
@@ -115,7 +114,7 @@ header {
 
 header h2 {
     margin-top: 65px;
-font-size: 2.5em;
+    font-size: 2.5em;
 }
 
 #cards{
@@ -124,9 +123,9 @@ font-size: 2.5em;
     text-align: center;
     gap: 15px;
     max-width: 100rem;
-  margin: .5rem auto;
+    margin: .5rem auto;
 	border:1px solid #bbb;
-  background-color: #eee;
+    background-color: #eee;
 	display: flex;
 	flex-wrap: wrap;
 }
