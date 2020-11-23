@@ -12,6 +12,7 @@
     <img id = "logo" src = "/lesson11/index/images/sunicon.png" alt = "sun logo for website">
     <header>
         <h2> East Idaho Weather</h2>
+        
             <nav class = "menu">
             <button onclick="toggleMenu()">&#9776;Menu</button>
             <ul id="primaryNav" class="hide">
@@ -27,9 +28,25 @@
 
     <main>
        <h2>Welcome to the Weather Site</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel sem ac felis egestas dapibus. Donec efficitur lacus eget varius molestie. Sed bibendum elit elit, ut consequat nibh egestas vel. Sed non purus sed dolor lobortis feugiat. Sed porttitor
-                augue felis. Morbi condimentum metus a tortor eleifend bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed lectus sed nisi laoreet varius et ut turpis.</p>
-        <h2>Our Local Towns</h2> 
+       <div class = "content">
+       <picture>
+        <source media= "(max-width: 500px)" srcset= "/lesson11/index/images/idahos.jpg 500w">
+        <source media= "(max-width: 1045px)" srcset= "/lesson11/index/images/idahom.jpg 960w">
+        <img id= "hero" src= "/lesson11/index/images/idaho.jpg" alt= "pic for home page">
+    </picture>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Donec massa sapien faucibus et molestie ac feugiat sed lectus. Elementum facilisis leo vel fringilla est ullamcorper. Facilisi 
+                nullam vehicula ipsum a arcu cursus vitae congue. Cursus eget nunc scelerisque viverra mauris in. Maecenas accumsan lacus 
+                vel facilisis volutpat est. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Nunc mi ipsum faucibus vitae. 
+                Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Porttitor rhoncus dolor purus non enim praesent 
+                elementum facilisis. In cursus turpis massa tincidunt dui ut ornare lectus sit. Euismod in pellentesque massa placerat duis ultricies 
+                lacus sed turpis. Lectus arcu bibendum at varius vel pharetra vel turpis nunc.
+                Sit amet justo donec enim diam. Enim praesent elementum facilisis leo vel fringilla est ullamcorper eget. Tristique risus nec feugiat 
+                in fermentum posuere urna. Ultrices dui sapien eget mi. Elit ut aliquam purus 
+                sit amet luctus. Dolor purus non enim praesent. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. Id faucibus nisl 
+                tincidunt eget nullam non nisi. Eu consequat ac felis donec et odio pellentesque. Vestibulum sed arcu non odio. Pulvinar neque laoreet suspendisse interdum consectetur libero. Mi sit amet mauris commodo quis imperdiet massa tincidunt. Egestas tellus rutrum tellus pellentesque eu tincidunt. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Eu sem integer vitae justo eget magna fermentum iaculis. Nisl nunc mi ipsum faucibus..</p>
+        </div> 
+        <h2>Our Local Towns</h2>
         <article>
         <div id = "cards"></div>
         </article>

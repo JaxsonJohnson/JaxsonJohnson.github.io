@@ -11,6 +11,13 @@ body{
     background-color: whitesmoke;
 }
 
+.hero{
+    display : block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
 nav {
     margin-top: -25px;
     background-color: #d3bdb0; 
@@ -44,15 +51,17 @@ main {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     grid-gap: 5px; 
-    padding: 5px; 
+    margin-left: 100px;
+    margin-right: 100px;
+    
 }
 
 
 .hero{
-    display : block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 50%;
 }
 
 .idhmap{
@@ -162,7 +171,7 @@ article {
 }
     
 
-@media only screen and (min-width: 1490px){
+@media only screen and (min-width: 1500px){
     #cards{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
