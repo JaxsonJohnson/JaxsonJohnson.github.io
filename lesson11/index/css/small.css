@@ -150,6 +150,15 @@ article {
         gap: 15px;
         
  }
+ nav button {display: none;}
+    nav ul.hide {
+        display: flex;
+        justify-content: space-around;
+    }
+    nav ul li{ 
+        float: left;
+    }
+ 
 }
     
 
@@ -161,6 +170,14 @@ article {
         gap: 15px;
         
 }
+nav button {display: none;}
+    nav ul.hide {
+        display: flex;
+        justify-content: space-around;
+    }
+    nav ul li{ 
+        float: left;
+    }
 }
 
 
