@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content = "Preston Idaho Weather">
+    <link rel="stylesheet" href="/gallery/css/small.css">
+    <link rel="stylesheet" href="/gallery/css/medium.css">
+    <link rel="stylesheet" href="/gallery/css/large.css">
+    <link rel="stylesheet" href="/gallery/css/normalize.css">
+    <title>Gallery Lesson 7</title>
+</head>
+<body>
+    <img id = "logo" src = "/lesson11/images/sunicon.png" alt = "logo of sun">
+    <header>
+        <h2> East Idaho Weather</h2>
+            <nav class = "menu">
+            <button onclick="toggleMenu()">&#9776;Menu</button>
+            <ul id="primaryNav" class="hide">
+            <li><a href="/lesson11/index.html">Home</a></li>
+            <li><a href="/lesson11/preston.html">Preston</a></li>
+            <li><a href="/lesson11/sodasprings.html">Soda Springs</a></li>
+            <li><a href="/lesson11/fishhaven.html">Fish Haven</a></li>
+            <li><a href="/lesson11/stormcenter.html">Storm Center</a></li>
+            <li><a class = "active" href="/lesson11/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+        <section class = "gallery-page">
+            <p id = "banner">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+            <h2>Gallery Page</h2>
+                <div class = "gallery">
+                    <div class = "grid">
+                        <img src = "/lesson11/gallery/images/cloudy.jpg" alt = "picture of the clouds">
+                        <p>Cloudy Skies</p>
+                    </div>
+                    <div class = "grid">
+                        <img src = "/lesson11/gallery/images/fall.jpg" alt = "pic of the fall season">
+                        <p>The Fall Season</p>
+                    </div>
+                    <div class = "grid">
+                        <img src = "/lesson11/gallery/images/fog.jpg" alt = "pic of a foggy setting">
+                        <p>Foggy Setting</p>
+                    </div>
+                    <div class = "grid">
+                        <img src = "/lesson11/gallery/images/lightning.jpg" alt = "lightning storm">
+                        <p>A Lightning Storm</p>
+                    </div>
+                    <div class = "grid">
+                        <img src = "/lesson11/gallery/images/rainbow.jpg" alt = "pic of rainbows">
+                        <p> Rainbow after a Storm</p>
+                    </div>
+                    <div class = "grid">
+                        <img src = "/lesson11/gallery/images/snowy.jpg" alt = "pic of a snowy environment">
+                        <p>Snow Downpour</p>
+                    </div>
+                    <div class = "grid">
+                        <img src = "/lesson11/gallery/images/spring.jpg" alt = "spring time">
+                        <p>Spring Time</p>
+                    </div>
+                    <div class = "grid">
+                        <img src = "/lesson11/gallery/images/sunny.jpg" alt = "sunny time">
+                        <p>Sunny Land</p>
+                    </div>
+                    <div class = "grid">
+                        <img src = "/lesson11/gallery/images/sunset.jpg" alt = "pic of a sunset">
+                        <p>A Sunset</p>
+                    </div>
+                </div>
+        </section>
+        
+
+    </main>
+
+    <footer>
+        
+        <p> Last Updated: <span id ="lastmodif"></span> |
+            Attributes | Jaxson Johnson | &copy; 2020 | <div id = 'current-date'></div>
+            </p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/webfontload.js"></script>
+</body>
+</html>

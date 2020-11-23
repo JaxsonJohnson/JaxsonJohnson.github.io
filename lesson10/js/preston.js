@@ -16,13 +16,32 @@ fetch(apiURL)
       document.getElementById('current-temp').textContent = data.main.temp;
       document.getElementById('current-humid').textContent = data.main.humidity;
       document.getElementById('current-speed').textContent = data.wind.speed;
-      document.getElementById('current-current').textContent = data.weather.main;
-      const imagesrc = 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png';
-      const desc = data.weather[0].description;
-      document.getElementById('imagesrc').textContent = imagesrc;
-      document.getElementById('icon').setAttribute('src', imagesrc);
-      document.getElementById('icon').setAttribute('alt', desc);
+      document.getElementById('current-current').textContent = data.weather[0].description;
+      let temperature = parseFloat(document.getElementById("current-temp").textContent = data.main.temp);
+      let ws = parseFloat(document.getElementById("current-speed").textContent = data.wind.speed);
+      let chill = windChill(temperature, ws);
+      if(temperature>50 && ws>2){
+          document.getElementById("wc").innerText = "";
+      }
+      else{
+          document.getElementById("wc").innerText = chill;
+      }
+      
+    
    });
+
+
+   function windChill(t,s){
+      let power = Math.pow(s,.16);
+      let outputws = 35.75 + 0.6215 * t - 35.75 * power + 0.4275 * t * power; 
+      let d = 2;
+      let mult = Math.pow(10, d);
+      end = Math.round(outputws*mult) / mult;
+      return end;
+      } 
+
+      
+      
 // Get forecast data and filter out only 18:00:00
 method = 'forecast';
 apiURL = baseURL +
@@ -47,6 +66,7 @@ fetch(apiURL)
       let forecast_day_num = 0;
       // The "list" property in the forecast JSON string
       let list = data.list;
+      let forecast_images = document.querySelectorAll('.forecast-img');
       // Loop through each item in the list of forecasts
       for (item of list) {
          // We only want the forecast for 18:00:00 each day
@@ -56,6 +76,8 @@ fetch(apiURL)
             forecast_dow[forecast_day_num].innerHTML = DOW[date.getDay()];
             // Pull out temperature
             forecast_temps[forecast_day_num].innerHTML = item.main.temp + "&deg;F";
+            const imagesrc = 'https://openweathermap.org/img/w/' + item.weather[0].icon + '.png';
+            forecast_images[forecast_day_num].setAttribute('src', imagesrc);
             forecast_day_num++;
          }
       }
