@@ -16,6 +16,7 @@ fetch(requestURL)
   const towns = jsonObject['towns'];
 
   for (let i = 0; i < towns.length; i++ ) {
+    if (towns[i].name == "Preston" || towns[i].name == "Fish Haven" || towns[i].name == "Soda Springs"){
     let card = document.createElement('section');
     let h1 = document.createElement('h1');
     let h3 = document.createElement('h3');
@@ -35,12 +36,15 @@ fetch(requestURL)
     card.appendChild(h1)
     card.appendChild(h3)
     card.appendChild(p)
-    card.appendChild(p2)
+    card.appendChild(p2) 
+    
     card.appendChild(p3)
     card.appendChild(image)
+    
 
     resultElement.appendChild(card);
   }
+}
 
 
 });
