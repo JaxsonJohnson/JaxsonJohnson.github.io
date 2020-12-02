@@ -37,7 +37,7 @@ fetch(URL)
 
                 document.querySelector("div.town-events").appendChild(card); 
 
-            } else if (pagetitle == "Soda Springs" &&  towns[i].name == "Soda Springs") {
+            } else if (pagetitle == "Soda Springs, Idaho" &&  towns[i].name == "Soda Springs") {
                 event_one.textContent = towns[i].events[0]; 
                 event_one.setAttribute("class", "events"); 
 
