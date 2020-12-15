@@ -1,0 +1,157 @@
+/* Header CSS */
+header{
+    background-color: #9f2d2d;
+    border-radius: 10px;
+}
+header h1{
+    margin-bottom: -5px;
+    margin-top: -1px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+}
+header h2{
+    margin-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+header img{
+    float: left;
+    margin-top: -20px;
+}
+
+/* Primary Nav CSS */
+nav {
+    margin-top: -25px;
+    background-color: #999494; 
+    text-align: center;
+    padding: 0.75em;
+    border-radius: 10px;
+}
+nav ul {
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+  }
+  nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none; 
+    font-size: 1.5rem;
+    color: black; 
+}
+  nav ul li a{
+      color: black;
+      text-decoration: underline;
+      font-weight: bold;
+  }
+  nav ul.hide{
+    display: none;    
+}
+
+
+/* Main CSS */
+main h1{
+    font-family: 'Roboto', sans-serif;
+    color: #a25757;
+    font-size: 30px;
+    text-align: center;
+}
+main h2{
+    font-family: 'Roboto', sans-serif;
+    color: #a25757;
+    font-size: 25px;
+}
+main p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+}
+body{
+    background-color: #d3bdb0;
+}
+.content{
+    margin: 5em;
+    background-color: #d3bdb0;
+}
+.person1{  /* DELETE THIS IF NOT IN THE HOME PAGE */
+    display: inline-block;
+    border: 4px solid black; 
+    padding: 25px;
+    margin: 20px; 
+    text-align: center;
+}
+.person2{ /* DELETE THIS IF NOT IN THE HOME PAGE */
+    display: inline-block;
+    border: 4px solid black; 
+    padding: 25px;
+    margin: 20px; 
+    text-align: center;
+}
+.audience{ /* DELETE THIS IF NOT IN THE HOME PAGE */
+    display: grid; 
+    justify-items: center;
+    gap: .5rem;
+    grid-template-columns: 1fr;
+}
+
+.forecast-day { /* DELETE THIS IF NOT IN THE HOME PAGE */
+   align-items: center;
+   display: inline-block;
+   position: relative;
+   top: 50%;
+   left: 10%; /* Change due to view size */
+   margin: 50px;
+   padding: 2px;
+   text-align: center;
+}
+
+.weathersummary{
+    position: relative;
+    left: 50px;
+}
+
+.content2{
+    position: relative;
+    padding: 25px;
+    margin-left: 12em; 
+}
+
+
+
+/* Table CSS */
+table{
+    width: 200px;
+    margin:60px;
+    position: static;
+    box-shadow: 0 0 30px #555;
+}
+th{
+    color: white;
+    background-color: #628ca6;
+}
+td,th{
+    text-align: center;
+    padding: 6px;
+    
+    }
+    caption{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        background-color:  #7fb9c2;
+    }
+
+
+/* Footer CSS */
+footer{
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    width: 100%;
+    background-color: #999494;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+.sociallinks{
+    float: right;
+}

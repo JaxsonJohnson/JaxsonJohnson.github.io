@@ -1,0 +1,100 @@
+/* Header CSS */
+header{
+    background-color: #9f2d2d;
+    border-radius: 10px;
+}
+header h1{
+    margin-bottom: -5px;
+    margin-top: -1px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+}
+header h2{
+    margin-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+header img{
+    float: left;
+    margin-top: -20px;
+}
+
+/* Primary Nav CSS */
+nav {
+    margin-top: -25px;
+    background-color: #999494; 
+    text-align: center;
+    padding: 0.75em;
+    border-radius: 10px;
+}
+nav ul {
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+  }
+  nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none; 
+    font-size: 1.5rem;
+    color: black; 
+}
+  nav ul li a{
+      color: black;
+      text-decoration: underline;
+      font-weight: bold;
+  }
+  nav ul.hide{
+    display: none;    
+}
+
+
+/* Main CSS */
+main h1{
+    font-family: 'Roboto', sans-serif;
+    color: #a25757;
+    font-size: 30px;
+    text-align: center;
+}
+main h2{
+    font-family: 'Roboto', sans-serif;
+    color: #a25757;
+    font-size: 25px;
+}
+main p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+}
+body{
+    background-color: #d3bdb0;
+}
+.content{
+    margin: 5em;
+    background-color: #d3bdb0;
+}
+
+/* Contact Table */
+.contact{
+    margin: 5em;
+    background-color: #d3bdb0;
+    display: inherit;
+    justify-content: center;
+}
+input, label {
+    display: block; 
+}
+
+/* Footer CSS */
+footer{
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    width: 100%;
+    background-color: #999494;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+.sociallinks{
+    float: right;
+}

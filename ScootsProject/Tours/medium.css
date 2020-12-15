@@ -1,0 +1,53 @@
+@media only screen and (min-width: 750px) {
+    /* Header CSS */
+    
+    /* Primary Nav CSS */
+    nav ul.hide{
+        display: none; 
+    }
+    nav button {display: none;}
+    nav ul.hide {
+        display: flex;
+        justify-content: space-around;
+    }
+    nav ul li{ 
+        float: left;
+    }
+
+    /* Main CSS */
+    .forecast-day { /* DELETE THIS IF NOT IN THE HOME PAGE */
+        align-items: center;
+        display: inline-block;
+        position: relative;
+        top: 50%;
+        left: 12%; /* Change due to view size */
+        margin: 50px;
+        padding: 2px;
+        text-align: center;
+     }
+
+     /* Table CSS */
+     table{
+        width: 1000px;
+        margin: 60px;
+        position: static;
+        box-shadow: 0 0 30px #555;
+    }
+    th{
+        color: white;
+        background-color: #628ca6;
+    }
+    td,th{
+        text-align: center;
+        padding: 6px;
+        
+        }
+        caption{
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            background-color:  #7fb9c2;
+        }
+
+    /* Footer CSS */
+}

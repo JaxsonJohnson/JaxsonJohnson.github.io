@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel= "stylesheet" href = "/ScootsProject/Rentals/small.css">
+    <link rel= "stylesheet" href = "/ScootsProject/Rentals/medium.css">
+    <link rel= "stylesheet" href = "/ScootsProject/Rentals/large.css">
+    <title>Scoots - Rentals</title>
+</head>
+<body>
+    <header>
+    <img id = "logo" src = "/ScootsProject/Images/ScootsLogo.png" alt = "scooter logo">
+    <h1>Scoots</h1>
+    <h2>Reliable Mobility</h2>
+    
+    <nav class = "menu">
+        <button onclick = "toggleMenu()">&#9776;Menu</button>
+        <ul id = "primaryNav" class = "hide">
+            <li><a  href = "/ScootsProject/Home/home.html">Home</a></li>
+            <li><a  class = "active" href = "/ScootsProject/Rentals/rentals.html">Rentals</a></li>
+            <li><a  href = "/ScootsProject/Reservations/reservations.html">Reservations</a></li>
+            <li><a  href = "/ScootsProject/Tours/tours.html">Tours</a></li>
+            <li><a  href = "/ScootsProject/Contact/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Rentals</h1>
+    
+    <h2>Rental Options & Prices</h2>
+    <div class = "content">
+        <table id = "table">
+            <caption>Rental Types</caption>
+            <tr class = "title">
+                <td><u>Rental Type</u></th>
+                    <th>Max People</th>
+                    <th>Half Day Reservation (3hrs)</th>
+                    <th>Full Day Reservation</th>
+                    <th>Half Day Walk-In (3hrs)</th>
+                    <th>Full Day Walk-In</th>
+                    <th>Picture</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td><span id = "name1"></span></td>
+                    <td><span id = "people1"></span></td>
+                    <td><span id = "rhalf1"></span></td>
+                    <td><span id = "rfull1"></span></td>
+                    <td><span id = "whalf1"></span></td>
+                    <td><span id = "wfull1"></span></td>
+                    <td><img id = "homeimg" src = "/ScootsProject/Images/metro.jpg"></td>
+                </tr>
+                <tr>
+                    <td><span id = "name2"></span></td>
+                    <td><span id = "people2"></span></td>
+                    <td><span id = "rhalf2"></span></td>
+                    <td><span id = "rfull2"></span></td>
+                    <td><span id = "whalf2"></span></td>
+                    <td><span id = "wfull2"></span></td>
+                    <td><img id = "homeimg" src = "/ScootsProject/Images/dio.jpg"></td>
+                </tr>
+                <tr>
+                    <td><span id = "name3"></span></td>
+                    <td><span id = "people3"></span></td>
+                    <td><span id = "rhalf3"></span></td>
+                    <td><span id = "rfull3"></span></td>
+                    <td><span id = "whalf3"></span></td>
+                    <td><span id = "wfull3"></span></td>
+                    <td><img id = "homeimg" src = "/ScootsProject/Images/pcx150.jpg"></td>
+                </tr>
+                <tr>
+                    <td><span id = "name4"></span></td>
+                    <td><span id = "people4"></span></td>
+                    <td><span id = "rhalf4"></span></td>
+                    <td><span id = "rfull4"></span></td>
+                    <td><span id = "whalf4"></span></td>
+                    <td><span id = "wfull4"></span></td>
+                    <td><img id = "homeimg" src = "/ScootsProject/Images/atv.jpg"></td>
+                </tr>
+                <tr>
+                    <td><span id = "name5"></span></td>
+                    <td><span id = "people5"></span></td>
+                    <td><span id = "rhalf5"></span></td>
+                    <td><span id = "rfull5"></span></td>
+                    <td><span id = "whalf5"></span></td>
+                    <td><span id = "wfull5"></span></td>
+                    <td><img id = "homeimg" src = "/ScootsProject/Images/jeep2door.jpg"></td>
+                </tr>
+                <tr>
+                    <td><span id = "name6"></span></td>
+                    <td><span id = "people6"></span></td>
+                    <td><span id = "rhalf6"></span></td>
+                    <td><span id = "rfull6"></span></td>
+                    <td><span id = "whalf6"></span></td>
+                    <td><span id = "wfull6"></span></td>
+                    <td><img id = "homeimg" src = "/ScootsProject/Images/jeep4door.jpg"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+
+<footer> <!--Social Media Links will be here-->
+    Last Updated: <span id ="lastmodif"></span> |
+    Attributes | Jaxson Johnson | &copy; 2020 | <div id = 'current-date'></div>
+<a href = "https://www.twitter.com"><img src = "/ScootsProject/Images/SocialMediaLinks/Twitter.png"></a>
+<a href = "https://www.instagram.com"><img src = "/ScootsProject/Images/SocialMediaLinks/Instagram.png"></a>
+<a href = "https://www.facebook.com"><img src = "/ScootsProject/Images/SocialMediaLinks/Facebook.png"></a>
+</footer>
+
+<script src="/ScootsProject/menufooter.js"></script>
+<script>
+    fetch("/ScootsProject/Rentals/rentals.json")
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        document.getElementById('name1').textContent = data.veichle1.name;
+        document.getElementById('people1').textContent = data.veichle1.persons;
+        document.getElementById('rhalf1').textContent = data.veichle1.rhalfday;
+        document.getElementById('rfull1').textContent = data.veichle1.rfullday;
+        document.getElementById('whalf1').textContent = data.veichle1.whalfday;
+        document.getElementById('wfull1').textContent = data.veichle1.wfullday;
+        
+        document.getElementById('name2').textContent = data.veichle2.name;
+        document.getElementById('people2').textContent = data.veichle2.persons;
+        document.getElementById('rhalf2').textContent = data.veichle2.rhalfday;
+        document.getElementById('rfull2').textContent = data.veichle2.rfullday;
+        document.getElementById('whalf2').textContent = data.veichle2.whalfday;
+        document.getElementById('wfull2').textContent = data.veichle2.wfullday;
+
+        document.getElementById('name3').textContent = data.veichle3.name;
+        document.getElementById('people3').textContent = data.veichle3.persons;
+        document.getElementById('rhalf3').textContent = data.veichle3.rhalfday;
+        document.getElementById('rfull3').textContent = data.veichle3.rfullday;
+        document.getElementById('whalf3').textContent = data.veichle3.whalfday;
+        document.getElementById('wfull3').textContent = data.veichle3.wfullday;
+
+        document.getElementById('name4').textContent = data.veichle4.name;
+        document.getElementById('people4').textContent = data.veichle4.persons;
+        document.getElementById('rhalf4').textContent = data.veichle4.rhalfday;
+        document.getElementById('rfull4').textContent = data.veichle4.rfullday;
+        document.getElementById('whalf4').textContent = data.veichle4.whalfday;
+        document.getElementById('wfull4').textContent = data.veichle4.wfullday;
+
+        document.getElementById('name5').textContent = data.veichle5.name;
+        document.getElementById('people5').textContent = data.veichle5.persons;
+        document.getElementById('rhalf5').textContent = data.veichle5.rhalfday;
+        document.getElementById('rfull5').textContent = data.veichle5.rfullday;
+        document.getElementById('whalf5').textContent = data.veichle5.whalfday;
+        document.getElementById('wfull5').textContent = data.veichle5.wfullday;
+
+        document.getElementById('name6').textContent = data.veichle6.name;
+        document.getElementById('people6').textContent = data.veichle6.persons;
+        document.getElementById('rhalf6').textContent = data.veichle6.rhalfday;
+        document.getElementById('rfull6').textContent = data.veichle6.rfullday;
+        document.getElementById('whalf6').textContent = data.veichle6.whalfday;
+        document.getElementById('wfull6').textContent = data.veichle6.wfullday;
+
+    })
+    </script>
+</body>
+</html>

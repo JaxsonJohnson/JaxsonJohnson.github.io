@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Scoots - Contact</title>
+    <link rel= "stylesheet" href = "/ScootsProject/Contact/small.css">
+    <link rel= "stylesheet" href = "/ScootsProject/Contact/medium.css">
+    <link rel= "stylesheet" href = "/ScootsProject/Contact/large.css">
+</head>
+<body>
+    <header>
+    <img id = "logo" src = "/ScootsProject/Images/ScootsLogo.png" alt = "scooter logo">
+    <h1>Scoots</h1>
+    <h2>Reliable Mobility</h2>
+    
+    <nav class = "menu">
+        <button onclick = "toggleMenu()">&#9776;Menu</button>
+        <ul id = "primaryNav" class = "hide">
+            <li><a  href = "/ScootsProject/Home/home.html">Home</a></li>
+            <li><a  href = "/ScootsProject/Rentals/rentals.html">Rentals</a></li>
+            <li><a  href = "/ScootsProject/Reservations/reservations.html">Reservations</a></li>
+            <li><a  href = "/ScootsProject/Tours/tours.html">Tours</a></li>
+            <li><a  class = "active" href = "/ScootsProject/Contact/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Contact</h1>
+    <div class = "contact">
+    <h2>Rental Info</h2>
+    <h3>If you have any questions please message us.</h3>
+        <label class="top">Full Name<input type="text" name="fullname" required></label>
+        <label class="top">Email<input type="email" name="email"  placeholder="______@email.com"></label>
+        <label class="top">Phone<input type="tele" name="phone"  placeholder="0000000000" required></label>
+        <label class="top">Zip Code<input type="number" name="zipcode"  placeholder="00000"></label>
+        <label class="top">Additional Information</label>
+        <textarea name="additionalinfo" rows="3" cols="40"></textarea>
+        <input type="submit" value="Send" class="submitbtn">
+    </div>
+
+    
+    <div class = "content">
+        Feel free to email or call us if you have any questions!<br>
+        Call us at 770-770-7700<br>
+        Email us at ScootsMobility@yahoo.com<br>
+        You can also find us on <a href = "https://www.twitter.com">Twitter</a>, <a href = "https://www.facebook.com">
+        Facebook</a>, or <a href = "https://www.instagram.com">Instagram</a>.
+    </div>
+
+
+
+    <div class = "content">
+    <h2>Our Locations</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50345.73099335048!2d-87.03801018531819
+    !3d20.301556692483473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e532fff8724d7%3A0x3b5acf5d66
+    54bf54!2sPlaya%20%22El%20Cielo%22!5e0!3m2!1sen!2sus!4v1607716333317!5m2!1sen!2sus" width="400" height="300" 
+    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7475.647258575031!2d-86.97790012310897!3
+    d20.47243592991425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5748bac98d29%3A0xec697a2a774f7a00!
+    2sPuerta%20Maya%20Cruise%20Ship%20Terminal!5e0!3m2!1sen!2sus!4v1607716513192!5m2!1sen!2sus" width="400" 
+    height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+</main>
+
+<footer> <!--Social Media Links will be here-->
+    Last Updated: <span id ="lastmodif"></span> |
+    Attributes | Jaxson Johnson | &copy; 2020 | <div id = 'current-date'></div>
+<a href = "https://www.twitter.com"><img src = "/ScootsProject/Images/SocialMediaLinks/Twitter.png"></a>
+<a href = "https://www.instagram.com"><img src = "/ScootsProject/Images/SocialMediaLinks/Instagram.png"></a>
+<a href = "https://www.facebook.com"><img src = "/ScootsProject/Images/SocialMediaLinks/Facebook.png"></a>
+</footer>
+
+<script src="/ScootsProject/menufooter.js"></script>
+</body>
+</html>

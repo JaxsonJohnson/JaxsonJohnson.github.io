@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots - Reservations</title>
+    <link href = "https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel= "stylesheet" href = "/ScootsProject/Reservations/small.css">
+    <link rel= "stylesheet" href = "/ScootsProject/Reservations/medium.css">
+    <link rel= "stylesheet" href = "/ScootsProject/Reservations/large.css">
+</head>
+<body>
+    <header>
+    <img id = "logo" src = "/ScootsProject/Images/ScootsLogo.png" alt = "scooter logo">
+    <h1>Scoots</h1>
+    <h2>Reliable Mobility</h2>
+    
+    <nav class = "menu">
+        <button onclick = "toggleMenu()">&#9776;Menu</button>
+        <ul id = "primaryNav" class = "hide">
+            <li><a  href = "/ScootsProject/Home/home.html">Home</a></li>
+            <li><a  href = "/ScootsProject/Rentals/rentals.html">Rentals</a></li>
+            <li><a class = "active" href = "/ScootsProject/Reservations/reservations.html">Reservations</a></li>
+            <li><a  href = "/ScootsProject/Tours/tours.html">Tours</a></li>
+            <li><a  href = "/ScootsProject/Contact/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Reservations</h1>
+    <h2>Rental Agreement</h2>
+    <div class = "content">
+        <li>A $50 security deposit is required to confirm reservations.</li>
+        <li>  A valid drivers license is required in hand at time of rental.</li>
+        <li> No one under 12 years of age are allowed to ride on the scooters.</li>
+        <li> Fuel charge not included.</li>
+        <li> Unlimited mileage.</li>
+        <li> Liability insurance is free of charge.</li>
+        <li> Reservations rate requires 24 hour prior notification.</li>
+        <li> Rentals may be returned to either location.</li>
+    </div>
+
+    <h2>Rental Form</h2>
+    <div class = "content">
+        <p>* = Required</p>
+        <form action="/ScootsProject/Reservations/action.txt" target = "_blank">
+        <label class="top">Date*<input type="text" name="date" required></label>
+        <lable class = "top" for = "renttype" id = "area">Rental Type*
+            <select name = "rental" id = "type">
+                                        <option value="hmetro">Honda Metro Scooter</option>
+                                        <option value="hdio">Honda Dio Scooter</option>
+                                        <option value="hpcx">Honda PCX150 Scooter</option>
+                                        <option value="hATV">Honda Pioneer ATV</option>
+                                        <option value="jwrangler4">Jeep Wrangler - 4 Door</option>
+                                        <option value="jwrangler2">Jeep Wrangler - 2 Door</option>
+        </select></lable>
+        <label class="top">Full Name*<input type="text" name="fullname" required></label>
+        <label class="top">Email*<input type="email" name="email"  placeholder="______@email.com"></label>
+        <label class="top">Phone*<input type="tele" name="phone"  placeholder="0000000000" required></label>
+        <label class="top">State or Country*<input type="state" name="state"  placeholder="" required></label>
+        <label class="top">Zip Code*<input type="number" name="zipcode"  placeholder="00000"></label>
+        <label class="top">Cruise Line<input type="text" name="cruiseline"  placeholder=""></label>
+        <label class="top">Additional Information</label>
+        <textarea name="additionalinfo" rows="3" cols="40"></textarea>
+    
+    <h2>Location Drop Off/Request</h2>
+        <lable class = "top" for = "location" id = "area">Locations Drop Off
+            <select name = "dropoff" id = "type">
+                                        <option value="cozhotel">Cozumel Hotel</option>
+                                        <option value="cozairport">Cozumel Internation Airport</option>
+                                        <option value="airbnb">Airbnb - Please Type Address in Special Instructions Box</option>
+                                        <option value="customadd">Custom Address - Please Type Address in Special Instructions Box</option>
+        </select></lable>
+        <lable class = "top" for = "payment" id = "pay">Form of Payment
+            <select name = "payment" id = "type">
+                                        <option value="google">Google Pay</option>
+                                        <option value="apple">Apple Pay</option>
+                                        <option value="paypal">Paypal</option>
+                                        <option value="credit">Credit Card</option>
+                                        <option value="debit">Debit Card</option>
+                                        <option value="cash">Cash</option>
+                                        
+        </select></lable>
+        <label class="top">Special Instructions</label><textarea name="specialintruc" rows="3" cols="40"></textarea>
+        <input type="submit" value="Send" class="submitbtn">
+    </form>
+    </div>
+
+</main>
+
+<footer> <!--Social Media Links will be here-->
+    Last Updated: <span id ="lastmodif"></span> |
+    Attributes | Jaxson Johnson | &copy; 2020 | <div id = 'current-date'></div>
+<a href = "https://www.twitter.com"><img src = "/ScootsProject/Images/SocialMediaLinks/Twitter.png"></a>
+<a href = "https://www.instagram.com"><img src = "/ScootsProject/Images/SocialMediaLinks/Instagram.png"></a>
+<a href = "https://www.facebook.com"><img src = "/ScootsProject/Images/SocialMediaLinks/Facebook.png"></a>
+</footer>
+
+<script src="/ScootsProject/menufooter.js"></script>
+</body>
+</html>

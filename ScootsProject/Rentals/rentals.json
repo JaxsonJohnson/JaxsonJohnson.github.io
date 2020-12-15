@@ -1,0 +1,56 @@
+{
+    "veichle1" : {
+    "name": "Honda Metro Scooter",
+    "persons": "1",
+    "rhalfday": "$20",
+    "rfullday": "$30",
+    "whalfday": "$25",
+    "wfullday": "$35"
+},
+
+"veichle2" : {
+    "name": "Honda Dio Scooter",
+    "persons": "2",
+    "rhalfday": "$30",
+    "rfullday": "$40",
+    "whalfday": "$45",
+    "wfullday": "$55"
+},
+
+"veichle3" : {
+    "name": "Honda PCX150 Scooter",
+    "persons": "2",
+    "rhalfday": "$40",
+    "rfullday": "$50",
+    "whalfday": "$45",
+    "wfullday": "$55"
+},
+ 
+"veichle4" : {
+    "name": "Honda Pioneer ATV",
+    "persons": "4",
+    "rhalfday": "$50",
+    "rfullday": "$70",
+    "whalfday": "$60",
+    "wfullday": "$80"
+},
+
+"veichle5" : {
+    "name": "Jeep Wrangler - 4 Door",
+    "persons": "5",
+    "rhalfday": "$70",
+    "rfullday": "$100",
+    "whalfday": "$85",
+    "wfullday": "$125"
+},
+
+"veichle6" : {
+    "name": "Jeep Wrangler - 2 Door",
+    "persons": "4",
+    "rhalfday": "$60",
+    "rfullday": "$85",
+    "whalfday": "$70",
+    "wfullday": "$90"
+}
+ 
+}
