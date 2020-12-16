@@ -1,6 +1,6 @@
 const apikey = "0d497b0c7a89c8bfe35166fd90cb24a2";
 const baseURL = "https://api.openweathermap.org/data/2.5/";
-let cityid = "5604473";
+let cityid = "3530103";
 let units = "imperial";
 let method = "weather";
 let apiURL = baseURL +

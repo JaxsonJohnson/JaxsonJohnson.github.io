@@ -26,6 +26,21 @@
         text-align: center;
      }
 
+     .img1 {
+        width: 50%;
+        margin-right:0;
+        margin-left: auto;
+        margin-bottom: -300px;
+        display: block;
+        
+     }
+
+     .contente{
+        margin: 5em;
+        background-color: #d3bdb0;
+        margin-bottom: -100px;
+     }s
+
      /* Table CSS */
      table{
         width: 1000px;
