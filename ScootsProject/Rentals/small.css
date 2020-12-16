@@ -72,42 +72,7 @@ body{
     margin: 5em;
     background-color: #d3bdb0;
 }
-.person1{  /* DELETE THIS IF NOT IN THE HOME PAGE */
-    display: inline-block;
-    border: 4px solid black; 
-    padding: 25px;
-    margin: 20px; 
-    text-align: center;
-}
-.person2{ /* DELETE THIS IF NOT IN THE HOME PAGE */
-    display: inline-block;
-    border: 4px solid black; 
-    padding: 25px;
-    margin: 20px; 
-    text-align: center;
-}
-.audience{ /* DELETE THIS IF NOT IN THE HOME PAGE */
-    display: grid; 
-    justify-items: center;
-    gap: .5rem;
-    grid-template-columns: 1fr;
-}
 
-.forecast-day { /* DELETE THIS IF NOT IN THE HOME PAGE */
-   align-items: center;
-   display: inline-block;
-   position: relative;
-   top: 50%;
-   left: 10%; /* Change due to view size */
-   margin: 50px;
-   padding: 2px;
-   text-align: center;
-}
-
-.weathersummary{
-    position: relative;
-    left: 50px;
-}
 
 .content2{
     position: relative;
@@ -119,10 +84,9 @@ body{
 
 /* Table CSS */
 table{
-    width: 200px;
-    margin:60px;
-    position: static;
-    box-shadow: 0 0 30px #555;
+    margin-right: auto;
+       margin-left: auto;
+        box-shadow: 0 0 30px #555;
 }
 th{
     color: white;
@@ -140,9 +104,14 @@ td,th{
         background-color:  #7fb9c2;
     }
 
+    img{
+        display: none;
+    }
+
 
 /* Footer CSS */
 footer{
+
     font-family: 'Roboto', sans-serif;
     height: 100%;
     width: 100%;

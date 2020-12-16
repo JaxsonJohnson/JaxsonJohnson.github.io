@@ -15,22 +15,11 @@
     }
 
     /* Main CSS */
-    .forecast-day { /* DELETE THIS IF NOT IN THE HOME PAGE */
-        align-items: center;
-        display: inline-block;
-        position: relative;
-        top: 50%;
-        left: 12%; /* Change due to view size */
-        margin: 50px;
-        padding: 2px;
-        text-align: center;
-     }
-
+    
      /* Table CSS */
      table{
-        width: 1000px;
-        margin: 60px;
-        position: static;
+        margin-right: auto;
+       margin-left: auto;
         box-shadow: 0 0 30px #555;
     }
     th{
@@ -47,6 +36,10 @@
             font-weight: bold;
             text-align: center;
             background-color:  #7fb9c2;
+        }
+
+        img{
+            display: initial;
         }
 
     /* Footer CSS */

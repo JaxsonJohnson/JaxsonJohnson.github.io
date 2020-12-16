@@ -31,7 +31,9 @@
     <h1>Welcome to Scoots!</h1> <!--Center this text-->
 
     <div class = "content2">
-    <img id = "homeimg" src = "/ScootsProject/Images/Cozumel.jpg">
+    <img class = "homeimg" src = "/ScootsProject/Images/Cozumel.jpg">
+    <source media= "(max-width: 500px)" srcset= "/ScootsProject/Images/Cozumelsmall.jpg 500w">
+    <source media= "(max-width: 1045px)" srcset= "/ScootsProject/Images/Cozumelmedium 960w">
     </div>
 
     
@@ -95,7 +97,7 @@
         <table id = "table">
         <caption>Rental Types</caption>
         <tr class = "title">
-            <td><u>Rental Type</u></th>
+            <th><u>Rental Type</u></th>
                 <th>Max People</th>
                 <th>Half Day Reservation (3hrs)</th>
                 <th>Full Day Reservation</th>
