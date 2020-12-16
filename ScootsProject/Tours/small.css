@@ -72,7 +72,30 @@ body{
     margin: 5em;
     background-color: #d3bdb0;
 }
+.contente{
+    margin: 5em;
+    background-color: #d3bdb0;
+    margin-bottom: -100px;
+}
+.img1 {
+    width: 50%;
+    margin-right:0;
+    margin-left: auto;
+    margin-bottom: -300px;
+    display:block;
+ }
 
+ .img2 {
+     margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+ }
+
+ .img3 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+ }
 
 
 /* Footer CSS */
